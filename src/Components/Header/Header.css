@@ -1,0 +1,10 @@
+.Header{
+    text-align: center;
+    font-size: 3vh;
+    border-bottom: 1px solid black;
+}
+
+.logo{
+    width: 1000px;
+    height: 225px;
+}
