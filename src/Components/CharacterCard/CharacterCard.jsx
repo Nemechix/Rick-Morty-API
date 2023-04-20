@@ -42,7 +42,7 @@ function CharacterCard() {
             >
               <Card
                 key={character.id}
-                sx={{ maxWidth: 345, marginBottom: "20px"  }}
+                sx={{ maxWidth: 345, margin: "20px"  }}
               >
                 <CardActionArea>
                   <CardMedia
@@ -52,7 +52,7 @@ function CharacterCard() {
                     alt={character.name}
                   />
                   <CardContent>
-                    <Typography fontFamily={'"Segoe UI"'} align="center" gutterBottom variant="h6" component="div">
+                    <Typography fontFamily={'"Segoe UI"'} align="center" gutterBottom variant="p" component="div" fontSize={18}>
                       {character.name}
                     </Typography>
                   </CardContent>

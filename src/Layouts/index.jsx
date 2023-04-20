@@ -12,7 +12,6 @@ function Root() {
         <Header/>
         <Outlet/>
         <Footer/>
-
     </div>
   )
 }
