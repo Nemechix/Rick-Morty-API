@@ -23,30 +23,49 @@ const {id} = useParams()
 
   const displayCharacter = () => {
     return (
-      <div className='character-content'>
-        <Card key={character.id} sx={{ maxWidth: 345, marginBottom: "20px" }}>
-          <CardActionArea>
-            <CardMedia
-              component="img"
-              height="400"
-              image={character.image}
-              alt={character.name}
-            />
-            <CardContent>
-              <Typography gutterBottom variant="h5" component="div">
-                Name: {character.name}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="div">
-                Specie: {character.species}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="div">
-                Status: {character.status}
-              </Typography>
-              <Typography gutterBottom variant="h6" component="div">
-                Gender: {character.gender}
-              </Typography>
-            </CardContent>
-          </CardActionArea>
+      <div className="character-content">
+        <Card
+          key={character.id}
+          sx={{
+            display: "flex",
+            flexDirection: "row",
+            maxWidth: 3000,
+            marginBottom: "20px",
+            borderRadius: "10%",
+            border: "",
+            height: "100%",
+          }}
+        >
+          <CardMedia
+            component="img"
+            height="400"
+            image={character.image}
+            alt={character.name}
+            sx={{ width: "100%" }}
+          />
+
+          <CardContent
+            sx={{
+              width: "100%",
+              textAlign: "left",
+              display: "flex",
+              flexDirection: "column",
+              justifyContent: "center",
+            }}
+          >
+            <Typography gutterBottom variant="h4" component="div">
+              Name: {character.name}
+            </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Specie: {character.species}
+            </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Status: {character.status}
+            </Typography>
+            <Typography gutterBottom variant="h5" component="div">
+              Gender: {character.gender}
+            </Typography>
+          </CardContent>
         </Card>
       </div>
     );

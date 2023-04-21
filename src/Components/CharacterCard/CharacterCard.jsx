@@ -7,7 +7,7 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { Link, BrowserRouter as Router } from "react-router-dom";
-import { CenterFocusStrong } from "@mui/icons-material";
+import './CharacterCard.css'
 
 
 function CharacterCard() {
@@ -22,6 +22,7 @@ function CharacterCard() {
     getCharacters();
   }, []);
 
+  
 
 
   const displayCharacters = () => {
@@ -41,8 +42,9 @@ function CharacterCard() {
               style={{ textDecoration: "none" }}
             >
               <Card
+                className="cosa"
                 key={character.id}
-                sx={{ maxWidth: 345, margin: "20px"  }}
+                sx={{ maxWidth: 345, margin: "20px"}}
               >
                 <CardActionArea>
                   <CardMedia
